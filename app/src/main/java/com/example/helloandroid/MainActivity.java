@@ -14,25 +14,26 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
         Log.v(TAG, "This is a verbose log.");
-        Log.v(TAG,   "This is debug log.");
+        Log.v(TAG, "This is debug log.");
         Log.v(TAG, "This is an info log.");
         Log.v(TAG, "This is a warning log,");
         Log.v(TAG, "This is an error log.");
 
-        Button button = (Button) findViewById(R.id.button);
+        Button button = (Button) findViewById(R.id.button4);
 
         button.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
             Log.i(TAG, "Button Clicked");
-                Intent intent = new Intent(MainActivity.this, Activity2.class);
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                 startActivity(intent);
             }
 
-        }
+        });
 
 
 
