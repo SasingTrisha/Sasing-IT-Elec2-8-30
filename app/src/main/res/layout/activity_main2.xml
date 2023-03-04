@@ -7,8 +7,10 @@
     tools:context=".MainActivity2">
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="75dp">
 
@@ -19,15 +21,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="196dp">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Subject" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -37,10 +36,6 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="311dp">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="174dp"
-            android:hint="Message" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -50,8 +45,31 @@
         android:text="Done"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintHorizontal_bias="0.845"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        app:layout_constraintVertical_bias="0.439" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:layout_marginStart="16dp"
+        android:hint="Message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject"
+        app:layout_constraintBottom_toTopOf="@+id/textInputEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+        app:layout_constraintVertical_bias="0.622" />
 </androidx.constraintlayout.widget.ConstraintLayout>
