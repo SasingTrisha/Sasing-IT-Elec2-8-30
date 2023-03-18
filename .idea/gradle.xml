@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/app/actionbar" />
             <option value="$PROJECT_DIR$/app/actionbar2" />
             <option value="$PROJECT_DIR$/app/mainaction" />
+            <option value="$PROJECT_DIR$/bottomnav" />
           </set>
         </option>
       </GradleProjectSettings>

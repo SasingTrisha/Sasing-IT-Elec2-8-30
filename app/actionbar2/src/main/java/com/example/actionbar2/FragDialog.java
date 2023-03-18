@@ -14,6 +14,6 @@ public class FragDialog extends androidx.fragment.app.DialogFragment {
    @Override
    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
       super.onCreateView(inflater, container, savedInstanceState);
-      return inflater.inflate(R.layout.activity_actionbar, container, false);
+      return inflater.inflate(R.layout.fragment_frag_dialog, container, false);
    }
 }
