@@ -15,3 +15,6 @@ dependencyResolutionManagement {
 rootProject.name = "hello android"
 include ':app'
 include ':app'
+include ':app:actionbar'
+include ':app:mainaction'
+include ':app:actionbar2'
